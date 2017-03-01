@@ -8,7 +8,7 @@
 
 Jersey官方推荐使用Maven来构建Jersey项目，Jersey支持普通得Java SE来使用，它会内置有Grizzly container 使其成为可以服务端应用。当然，也可是使用Jersey得Maven模板来创建Jersey得Web应用，他能编译成war来方便发布在Servlet容器中\(Servlet2.5 + \)。
 
-​       当然，由于Jersey是可以当作第三方工具包的项目，也可以在已有的项目中引入Jersey的依赖，并配置相关属性来使用Jersey的功能。
+当然，由于Jersey是可以当作第三方工具包的项目，也可以在已有的项目中引入Jersey的依赖，并配置相关属性来使用Jersey的功能。
 
 ​      下面根据官方文档，来介绍两种创建Jersey项目的方式。
 
