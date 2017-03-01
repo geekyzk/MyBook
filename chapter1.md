@@ -10,7 +10,7 @@ Jersey官方推荐使用Maven来构建Jersey项目，Jersey支持普通得Java S
 
 当然，由于Jersey是可以当作第三方工具包的项目，也可以在已有的项目中引入Jersey的依赖，并配置相关属性来使用Jersey的功能。
 
-​      下面根据官方文档，来介绍两种创建Jersey项目的方式。
+下面根据官方文档，来介绍两种创建Jersey项目的方式。
 
 * 创建Java SE项目
 
