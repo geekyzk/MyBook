@@ -52,8 +52,7 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-webapp \
 
 ![](/assets/Jersey.png)
 
-Main函数包含了程序的主入口，它启动后，就会自动运行内置的Container来启动项目,方便别人访问。其中，`GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);`这段代码设置了监控的跟URI为[http://localhost:8080/myapp/](http://localhost:8080/myapp/)，扫描的包配置为 \*\*\`rc\`\*\*，即\`final ResourceConfig rc = new ResourceConfig\(\).packages\("com.em248"\);\`则我们在\*\*com.em248\*\*包或其子包下配置的注解等将会被扫描并注册。
-
+Main函数包含了程序的主入口，它启动后，就会自动运行内置的Container来启动项目,方便别人访问。其中，`GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);`这段代码设置了监控的跟URI为[http://localhost:8080/myapp/](http://localhost:8080/myapp/)，扫描的包配置为 **rc**，即`final ResourceConfig rc = new ResourceConfig().packages("com.em248");`则我们在**com.em248**包或其子包下配置的注解等将会被扫描并注册。
 
         test包下也包含了一个基本测试的例子，可以方便我们按照这个模板例子来写好测试用例。
 
