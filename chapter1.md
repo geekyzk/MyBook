@@ -6,7 +6,7 @@
 
 ## Jersey项目创建
 
-​       Jersey官方推荐使用Maven来构建Jersey项目，Jersey支持普通得Java SE来使用，它会内置有Grizzly container 使其成为可以服务端应用。当然，也可是使用Jersey得Maven模板来创建Jersey得Web应用，他能编译成war来方便发布在Servlet容器中\(Servlet2.5 + \)。
+Jersey官方推荐使用Maven来构建Jersey项目，Jersey支持普通得Java SE来使用，它会内置有Grizzly container 使其成为可以服务端应用。当然，也可是使用Jersey得Maven模板来创建Jersey得Web应用，他能编译成war来方便发布在Servlet容器中\(Servlet2.5 + \)。
 
 ​       当然，由于Jersey是可以当作第三方工具包的项目，也可以在已有的项目中引入Jersey的依赖，并配置相关属性来使用Jersey的功能。
 
@@ -22,8 +22,6 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-grizzly2 \
 ```
 
 在命令行中，可以使用这段代码来创建Jersey的maven项目，它即会生成一个Jersey官方标准的项目结构，如果使用Eclipse ，IDEA等IDE创建的话，因为默认没有Jersey的模板用例，则必须自己手动添加，流程如下：
-
-
 
 1. 点开Eclipse创建Maven项目的界面，即New Maven project 界面，在这个界面中选中Add Archetype按钮来添加新的模板。
 
