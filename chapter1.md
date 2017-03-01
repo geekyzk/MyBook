@@ -21,7 +21,9 @@
 -DarchetypeVersion=2.25.1
 ```
 
-        在命令行中，可以使用这段代码来创建Jersey的maven项目，它即会生成一个Jersey官方标准的项目结构，如果使用Eclipse ，IDEA等IDE创建的话，因为默认没有Jersey的模板用例，则必须自己手动添加，流程如下：
+```
+    在命令行中，可以使用这段代码来创建Jersey的maven项目，它即会生成一个Jersey官方标准的项目结构，如果使用Eclipse ，IDEA等IDE创建的话，因为默认没有Jersey的模板用例，则必须自己手动添加，流程如下：
+```
 
 1. 点开Eclipse创建Maven项目的界面，即New Maven project 界面，在这个界面中选中Add Archetype按钮来添加新的模板。
 
@@ -42,8 +44,6 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-webapp \
               -DarchetypeVersion=2.25.1
 ```
 
-
-
 在IDE中创建模板的步骤，也如创建Java SE模板相同。
 
 ## Jersey项目结构
@@ -54,18 +54,11 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-webapp \
 
 ![](/assets/Jersey.png)
 
-      Main函数包含了程序的主入口，它启动后，就会自动运行内置的Container来启动项目,方便别人访问。其中，`GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);`这段代码设置了监控的跟URI为`http://localhost:8080/myapp/`，扫描的包配置为rc，即`final ResourceConfig rc = new ResourceConfig().packages("com.em248");`则我们在_com.em248_包或其子包下配置的注解等将会被扫描并注册。
+        Main函数包含了程序的主入口，它启动后，就会自动运行内置的Container来启动项目,方便别人访问。其中，`GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);`这段代码设置了监控的跟URI为`http://localhost:8080/myapp/`，扫描的包配置为**`rc`**，即`final ResourceConfig rc = new ResourceConfig().packages("com.em248");`则我们在**com.em248**包或其子包下配置的注解等将会被扫描并注册。
 
-     test包下也包含了一个基本测试的例子，可以方便我们按照这个模板例子来写好测试用例。
-
-
-
-```
+        test包下也包含了一个基本测试的例子，可以方便我们按照这个模板例子来写好测试用例。
 
 
-
-​    test包下也包含了一个基本测试的例子，可以方便我们按照这个模板例子来写好测试用例。
-```
 
     ​    基本的结构和普通的maven项目相同，只是Jersey初始化了一些类和主函数，方便运行。具体结构如下图所示:
 
