@@ -48,9 +48,7 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-webapp \
 
 * Jersey Java SE 项目结构
 
-  ```
-   基本的结构和普通的maven项目相同，只是Jersey初始化了一些类和主函数，方便运行。具体结构如下图所示:
-  ```
+基本的结构和普通的maven项目相同，只是Jersey初始化了一些类和主函数，方便运行。具体结构如下图所示:
 
 ![](/assets/Jersey.png)
 
