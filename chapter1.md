@@ -2,7 +2,7 @@
 
 ## Jersey概述
 
-​    Jersey是一个以Java实现得RESTful Web Service。它可以根据需要，自定义返回media types，例如返回\* text/plain \*，\* application/json \*  等。
+​    Jersey是一个以Java实现得RESTful Web Service。它可以根据需要，自定义返回**media types**，例如返回\* text/plain \*，\* application/json \*  等。
 
 ## Jersey项目创建
 
@@ -14,7 +14,7 @@
 
 * 创建Java SE项目
 
-\`\`\`shell
+\`\`\`
 
 mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-grizzly2 \
 
