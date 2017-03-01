@@ -54,33 +54,15 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-webapp \
 
 Main函数包含了程序的主入口，它启动后，就会自动运行内置的Container来启动项目,方便别人访问。其中，`GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);`这段代码设置了监控的跟URI为[http://localhost:8080/myapp/](http://localhost:8080/myapp/)，扫描的包配置为 **rc**，即`final ResourceConfig rc = new ResourceConfig().packages("com.em248");`则我们在**com.em248**包或其子包下配置的注解等将会被扫描并注册。
 
-        test包下也包含了一个基本测试的例子，可以方便我们按照这个模板例子来写好测试用例。
+test包下也包含了一个基本测试的例子，可以方便我们按照这个模板例子来写好测试用例。
 
+* Jersey Web 项目结构
 
+Jersey Web 项目结构和普通的maven webApp 项目结构是一样的，都包含了webapp,web.xml等基本的配置文件，但是，在web.xml文件中，Jersey已经帮我们配置好了其使用的Servlet和扫描注解的包和匹配的URI路径。其中，如果我们使用的是Servlet 3.0的Web 容器，则我们也可以不需要使用web.xml配置文件。大体结构如下图所示：​
 
-    ​    基本的结构和普通的maven项目相同，只是Jersey初始化了一些类和主函数，方便运行。具体结构如下图所示:
+![](/assets/Jersey1.png)
 
-
-
-    !\[Java SE 项目结构\]\(.\Jersey.png\)
-
-
-
-    ​    Main函数包含了程序的主入口，它启动后，就会自动运行内置的Container来启动项目,方便别人访问。其中，\` GrizzlyHttpServerFactory.createHttpServer\(URI.create\(BASE\_URI\), rc\); \`这段代码设置了监控的跟URI为\` http://localhost:8080/myapp/ \` ，扫描的包配置为rc，即\` final ResourceConfig rc = new ResourceConfig\(\).packages\("com.em248"\); \` 则我们在\_com.em248\_包或其子包下配置的注解等将会被扫描并注册。
-
-
-
-    ​    test包下也包含了一个基本测试的例子，可以方便我们按照这个模板例子来写好测试用例。
-
-\* Jersey Web 项目结构
-
-```
-​    Jersey Web 项目结构和普通的maven webApp 项目结构是一样的，都包含了webapp,web.xml等基本的配置文件，但是，在web.xml文件中，Jersey已经帮我们配置好了其使用的Servlet和扫描注解的包和匹配的URI路径。其中，如果我们使用的是Servlet 3.0的Web 容器，则我们也可以不需要使用web.xml配置文件。大体结构如下图所示：​
-
-!\[Web项目结构\]\(.\Jersey1.png\)
-
-​    其中entity是博主自己手动创建的，在刚开始的时候是没有这个包以及这个包下的内容。\_MyResource.java\_就是给出的基本的使用注解来映射请求的案例。
-```
+其中**entity**是作者自己手动创建的，在刚开始的时候是没有这个包以及这个包下的内容。**`MyResource.java`**就是给出的基本的使用注解来映射请求的案例。
 
 
 
