@@ -2,9 +2,9 @@
 
 ## Jersey概述
 
-​    Jersey是一个以Java实现得RESTful Web Service。它可以根据需要，自定义返回media types，例如返回\*text/plain\*，\*application/json\* 等。
+​    Jersey是一个以Java实现得RESTful Web Service。它可以根据需要，自定义返回media types，例如返回\* text/plain \*，\* application/json \*  等。
 
-\#\# Jersey项目创建 \#\#
+## Jersey项目创建
 
 ​    Jersey官方推荐使用Maven来构建Jersey项目，Jersey支持普通得Java SE来使用，它会内置有Grizzly container 使其成为可以服务端应用。当然，也可是使用Jersey得Maven模板来创建Jersey得Web应用，他能编译成war来方便发布在Servlet容器中\(Servlet2.5 + \)。
 
@@ -30,11 +30,11 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-grizzly2 \
 
 1. 点开Eclipse创建Maven项目的界面，即New Maven project 界面，在这个界面中选中Add Archetype按钮来添加新的模板。
 
-1. 输入相关信息，即可创建成功，其中Repository Url是选填项，如果需要填写，则可以填下面这个Url
+2. 输入相关信息，即可创建成功，其中Repository Url是选填项，如果需要填写，则可以填下面这个Url
 
-     \`\[https://maven.java.net/content/repositories/snapshots/\]\(https://maven.java.net/content/repositories/snapshots/\) \`
+   \`\[[https://maven.java.net/content/repositories/snapshots/\]\(https://maven.java.net/content/repositories/snapshots/\](https://maven.java.net/content/repositories/snapshots/]\(https://maven.java.net/content/repositories/snapshots/\)\) \`
 
-* 创建标准的Java Web项目
+3. 创建标准的Java Web项目
 
 创建Java Web项目其实跟Java SE项目类似，只是maven的命令参数有稍微的改变，即如下：
 
