@@ -15,15 +15,13 @@
 * 创建Java SE项目
 
 ```
- mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-grizzly2 \
+mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-grizzly2 \
 -DarchetypeGroupId=org.glassfish.jersey.archetypes -DinteractiveMode=false \
 -DgroupId=com.example -DartifactId=simple-service -Dpackage=com.example \
 -DarchetypeVersion=2.25.1
 ```
 
-```
-    在命令行中，可以使用这段代码来创建Jersey的maven项目，它即会生成一个Jersey官方标准的项目结构，如果使用Eclipse ，IDEA等IDE创建的话，因为默认没有Jersey的模板用例，则必须自己手动添加，流程如下：
-```
+        在命令行中，可以使用这段代码来创建Jersey的maven项目，它即会生成一个Jersey官方标准的项目结构，如果使用Eclipse ，IDEA等IDE创建的话，因为默认没有Jersey的模板用例，则必须自己手动添加，流程如下：
 
 1. 点开Eclipse创建Maven项目的界面，即New Maven project 界面，在这个界面中选中Add Archetype按钮来添加新的模板。
 
@@ -50,7 +48,9 @@ mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-webapp \
 
 * Jersey Java SE 项目结构
 
-       基本的结构和普通的maven项目相同，只是Jersey初始化了一些类和主函数，方便运行。具体结构如下图所示:
+  ```
+   基本的结构和普通的maven项目相同，只是Jersey初始化了一些类和主函数，方便运行。具体结构如下图所示:
+  ```
 
 ![](/assets/Jersey.png)
 
